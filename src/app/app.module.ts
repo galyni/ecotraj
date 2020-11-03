@@ -18,7 +18,7 @@ import { ConseilsComponent } from './conseils/conseils.component';
 
 const routes = [
   { path: '', component: AccueilComponent },
-  { path: 'conseils/:objets', component: ConseilsComponent }
+  { path: 'conseils', component: ConseilsComponent }
 ]
 
 @NgModule({

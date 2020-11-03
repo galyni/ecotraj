@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../api.service';
 import { Router } from '@angular/router';
+import { JsonPipe } from '@angular/common';
 
 @Component({
   selector: 'app-accueil',
@@ -25,10 +26,10 @@ export class AccueilComponent implements OnInit {
   }
 
   getResults() {
-    var checkedItemsSerialises = this.checkedItems.join(''); 
-    // localStorage.setItem('elemRecuperes', checkedItemsSerialises);
+    var checkedItemsSerialises = this.checkedItems.join('-'); 
+    localStorage.setItem('elemRecuperes', checkedItemsSerialises);
     
-    this.router.navigate(['conseils', checkedItemsSerialises]);
+    this.router.navigate(['conseils']);   
   }
 
   onChange(id: number) {

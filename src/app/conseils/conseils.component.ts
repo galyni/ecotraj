@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../api.service';
-import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-conseils',
@@ -13,18 +12,14 @@ export class ConseilsComponent implements OnInit {
   legumes;
   elementsSelectionnes;
 
-  constructor(private api: ApiService,
-    private route: ActivatedRoute) {
+  constructor(private api: ApiService) {
 
   }
 
   ngOnInit(): void {   
-    this.elementsSelectionnes = this.route.snapshot.paramMap.get('objets').split('');
-    console.log(this.elementsSelectionnes);
+    this.elementsSelectionnes = localStorage.getItem('elemRecuperes').split('-').map(Number);
+    this.fruits = this.api.fruits;
+    this.legumes = this.api.legumes;
   }
 
-  test(){
-    var elementsSelectionnes = localStorage.getItem['elemRecuperes'].split('-');
-    console.log(elementsSelectionnes);
-  }
 }

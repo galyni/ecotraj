@@ -5,7 +5,7 @@ export class ApiService {
 
     fruits = [
         {
-          id:1,
+          id:"1",
           nom: 'salades',
           image: 'https://www.flaticon.com/svg/static/icons/svg/123/123226.svg',
         },
