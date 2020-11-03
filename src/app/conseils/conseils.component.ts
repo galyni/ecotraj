@@ -16,10 +16,21 @@ export class ConseilsComponent implements OnInit {
 
   }
 
-  ngOnInit(): void {   
+  ngOnInit(): void {
     this.elementsSelectionnes = localStorage.getItem('elemRecuperes').split('-').map(Number);
     this.fruits = this.api.fruits;
     this.legumes = this.api.legumes;
+  }
+
+  getItem(id) {
+    for (let fruit of this.fruits) {
+      if (fruit.id === id)
+         return fruit;
+    }
+    for (let legume of this.legumes) {
+      if (legume.id === id)
+         return legume;
+    }
   }
 
 }
