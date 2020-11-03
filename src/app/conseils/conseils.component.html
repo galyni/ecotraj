@@ -1,6 +1,6 @@
 <h1>Vous avez sélectionné [TEST] :</h1>
 <mat-list>
-    <mat-list-item *ngFor="let fruit of fruits"><p >{{ fruit.nom }}</p></mat-list-item>
+    <mat-list-item *ngFor="let fruit of fruits"><p *ngIf="elementsSelectionnes.includes(fruit.id)">{{ fruit.nom }}</p></mat-list-item>
     <mat-list-item *ngFor="let legume of legumes"><p *ngIf="elementsSelectionnes.includes(legume.id)">{{ legume.nom }}</p></mat-list-item>
 </mat-list>
 
