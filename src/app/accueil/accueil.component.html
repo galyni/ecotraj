@@ -6,22 +6,22 @@
     <p>
       Commencer mon potager :
     </p>
-    <div style="display: inline-block;">
-      <mat-list >
-        <mat-list-item style="flex: auto;" *ngFor="let fruit of fruits">
-          <mat-checkbox color='primary' labelPosition='before'>{{ fruit['nom'] }} <img class="icones" src="{{ fruit['image'] }}"></mat-checkbox>
+    <!-- <div style="display: inline-block;"> -->
+      <mat-list style="display: inline-block;" >
+        <mat-list-item *ngFor="let fruit of fruits">
+          <mat-checkbox (change)="onChange(fruit.id)" color='primary' labelPosition='after'><img class="icones" src="{{ fruit['image'] }}"> {{ fruit['nom'] }} </mat-checkbox>
         </mat-list-item>
       </mat-list>
-    </div>
-    <div style="display: inline-block;">
-      <mat-list>
+    <!-- </div> -->
+    <!-- <div style="display: inline-block;"> -->
+      <mat-list style="display: inline-block;">
         <mat-list-item *ngFor="let legume of legumes">
-          <mat-checkbox color='primary' labelPosition='after'><img class="icones" src="{{ legume['image'] }}"> {{ legume['nom'] }}</mat-checkbox>
+          <mat-checkbox (change)="onChange(legume.id)" color='primary' labelPosition='after'><img class="icones" src="{{ legume['image'] }}"> {{ legume['nom'] }}</mat-checkbox>
         </mat-list-item>
       </mat-list>
-    </div>
+    <!-- </div> -->
   </mat-card-content>
   <mat-card-actions>
-    <button mat-button>Valider ma liste</button>
+    <button mat-button (click)="getResults()">Valider ma liste</button>
   </mat-card-actions>
 </mat-card>
