@@ -5,3 +5,14 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.mat-checkbox-layout {
+    flex: auto;
+    text-align:right;
+    background-color: green;
+}
+
+.icones {
+    width: 30px;
+    height: 30px;
+}

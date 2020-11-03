@@ -7,16 +7,16 @@
       Commencer mon potager :
     </p>
     <div style="display: inline-block;">
-      <mat-list>
-        <mat-list-item *ngFor="let fruit of fruits">
-          <mat-checkbox color='primary' labelPosition='before'>{{ fruit['nom'] }}</mat-checkbox><br>
+      <mat-list >
+        <mat-list-item style="flex: auto;" *ngFor="let fruit of fruits">
+          <mat-checkbox color='primary' labelPosition='before'>{{ fruit['nom'] }} <img class="icones" src="{{ fruit['image'] }}"></mat-checkbox>
         </mat-list-item>
       </mat-list>
     </div>
     <div style="display: inline-block;">
       <mat-list>
         <mat-list-item *ngFor="let legume of legumes">
-          <mat-checkbox color='primary' labelPosition='before'>{{ legume['nom'] }}</mat-checkbox><br>
+          <mat-checkbox color='primary' labelPosition='after'><img class="icones" src="{{ legume['image'] }}"> {{ legume['nom'] }}</mat-checkbox>
         </mat-list-item>
       </mat-list>
     </div>

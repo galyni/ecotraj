@@ -9,31 +9,39 @@ export class AccueilComponent implements OnInit {
 
   fruits = [
     {
-      nom: 'tomate'
+      nom: 'salades',
+      image: 'https://www.flaticon.com/svg/static/icons/svg/123/123226.svg'
     },
     {
-      nom: 'pomme'
+      nom: 'tomates',
+      image: 'https://www.flaticon.com/svg/static/icons/svg/123/123223.svg'
     },
     {
-      nom: 'poire'
+      nom: 'fraise',
+      image: 'https://www.flaticon.com/svg/static/icons/svg/123/123266.svg'
     },
     {
-      nom: 'banane'
+      nom: 'banane',
+      image: 'https://www.flaticon.com/svg/static/icons/svg/123/123224.svg'
     }
   ];
 
   legumes = [
     {
-      nom: 'poireaux'
+      nom: 'carotte',
+      image: 'https://www.flaticon.com/svg/static/icons/svg/123/123236.svg'
     },
     {
-      nom: 'aubergine'
+      nom: 'aubergine',
+      image: 'https://www.flaticon.com/svg/static/icons/svg/286/286695.svg'
     },
     {
-      nom: 'endives'
+      nom: 'oignons',
+      image: 'https://www.flaticon.com/svg/static/icons/svg/123/123238.svg'
     },
     {
-      nom: 'haricots verts'
+      nom: 'navets',
+      image: 'https://www.flaticon.com/svg/static/icons/svg/123/123225.svg'
     }
   ];
 
