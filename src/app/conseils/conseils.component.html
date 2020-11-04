@@ -1,36 +1,30 @@
 <h1>Vous avez sélectionné :</h1>
 <mat-list>
-    <div *ngFor="let element of liste">
-        <h4>{{ element['nom'] }}</h4>
-        <div><img class="image" [src]="element['image']"></div>
-        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat.</div>
-        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat.</div>
-        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat.</div>
-        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat.</div>
-        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat.</div>
-        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat.</div>
+  <div *ngFor="let element of liste" class="jolieTexte">
+    <div class="container">
+
+      <h4 class="jolieTexte">{{ element['nom'] }}</h4>
+      <div><img class="image" [src]="element['image']"></div>
+
+      <div class="item-1">item a 1</div>
+      <div class="item-2">item b 1</div>
+      <div class="item-3">item a 2</div>
+      <div class="item-4">item b 2</div>
+      <div class="item-5">item a 3</div>
+      <div class="item-6">item b 3</div>
     </div>
+  </div>
+
 </mat-list>
 
 <mat-card>
-    <mat-card-header>
-        Vidéo pour réaliser soi-même son potager.
-    </mat-card-header>
-    <mat-card-content>
-    </mat-card-content>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/G4BlA68xs9Y" frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen></iframe>
+  <mat-card-header style="font-family: 'Alegreya Sans', sans-serif;">
+    Vidéo pour réaliser soi-même son potager.
+  </mat-card-header>
+
+  <mat-card-content>
+  </mat-card-content>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/G4BlA68xs9Y" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
 </mat-card>
