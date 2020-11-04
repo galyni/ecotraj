@@ -1,26 +1,26 @@
-<h1 class="jolieTexte" style="margin-top: 20px;">Vous avez sélectionné :</h1>
+<h1 class="jolieTexte">Vous avez sélectionné :</h1>
 <mat-list>
   <mat-card *ngFor="let element of liste" class="jolieTexte; bloc; textbloc">
     <div class="container">
 
-      <div style="text-align: center"><img id="image" [src]="element['image']"></div>
-      <h4 class="jolieTexte" id="titre">{{ element['nom'] }}</h4>
+      <div style="text-align: center"><img class="image" [src]="element['image']"></div>
+      <h4 class="jolieTexte; textcentre">{{ element['nom'] }}</h4>
 
 
-      <div class="item-1">item a 1</div>
-      <div class="item-2">item b 1</div>
-      <div class="item-3">item a 2</div>
-      <div class="item-4">item b 2</div>
-      <div class="item-5">item a 3</div>
-      <div class="item-6">item b 3</div>
+      <div class="item-1">Vous avez besoin de {{ element['graines']}} graines par m2.</div>
+      <div class="item-2">Vous devez arroser {{ element['arrosage'] }} fois par semaine.</div>
+      <div class="item-3">Il faut mettre en terre au moment suivant : {{element['date'] }}. </div>
+      <div class="item-4">La récolte pourra être fait après {{element['recolte']}} semaines.</div>
+      <div class="item-5">Un petit conseil pour favoriser la pousse : {{ element['conditions']}}.</div>
+      <div class="item-6">Quelques liens utiles : <a *ngFor="let lien of element['liens']" [href]="lien">Test</a></div>
     </div>
   </mat-card>
 
 </mat-list>
 
 <mat-card>
-  <mat-card-header class="jolieTexte; textbloc" style="margin-bottom: 15px">
-    Vidéo pour réaliser soi-même son potager :
+  <mat-card-header class="jolieTexte; textbloc" style="margin-bottom: 15  px">
+    Vidéo pour réaliser soi-même son potager.
   </mat-card-header>
   <iframe class="frame" width="560" height="315" src="https://www.youtube.com/embed/G4BlA68xs9Y" frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
