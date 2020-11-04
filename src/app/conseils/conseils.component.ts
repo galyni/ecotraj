@@ -10,7 +10,8 @@ export class ConseilsComponent implements OnInit {
 
   fruits;
   legumes;
-  elementsSelectionnes;
+  elementsSelectionnes = [];
+  liste = [];
 
   constructor(private api: ApiService) {
 
@@ -20,6 +21,10 @@ export class ConseilsComponent implements OnInit {
     this.elementsSelectionnes = localStorage.getItem('elemRecuperes').split('-').map(Number);
     this.fruits = this.api.fruits;
     this.legumes = this.api.legumes;
+    console.log(this.elementsSelectionnes);
+    for(let id of this.elementsSelectionnes){
+      this.liste.push(this.getItem(id));
+    }
   }
 
   getItem(id) {
