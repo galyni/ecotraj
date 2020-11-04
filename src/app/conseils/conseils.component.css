@@ -23,11 +23,10 @@
   grid-template-columns: 100px 100px 100px 100px;
   grid-template-rows: auto;
   grid-template-areas:
-    ". . header1 ."
-    ". header2 header2 ."
-    "main1 main2 . ."
-    "main3 main4 . ."
-    "main5 main6 . .";
+    "header header header header"
+    ". main1 main2 ."
+    ". main3 main4."
+    ". main5 main6.";
 }
 
 .item-1 {
