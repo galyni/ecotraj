@@ -1,6 +1,21 @@
 .image {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
+}
+
+.bloc {
+  width: 40%;
+
+}
+
+.textbloc{
+  display: flex;
+  justify-content: center;
+}
+
+.textcentre{
+  text-align: center;
+
 }
 
 .container {
@@ -16,25 +31,44 @@
 
 .item-1 {
   grid-area: main1;
+  text-align: center;
 }
 
 .item-2 {
   grid-area: main2;
+  text-align: center;
 }
 
 .item-3 {
   grid-area: main3;
+  text-align: center;
 }
 
 .item-4 {
   grid-area: main4;
+  text-align: center;
 }
 
 .item-5 {
   grid-area: main5;
+  text-align: center;
 }
 
 .item-6 {
   grid-area: main6;
+  text-align: center;
+}
+
+/*.video-youtube{
+  position: absolute;
+  top: 0; right: 0; !* confuse it i guess *!
+  bottom: 0; left: 0;
+  margin: auto; !* make em equal *!
+}*/
+
+.frame {
+  width: 560px;
+  display: block;
+  margin: 0 auto;
 }
 

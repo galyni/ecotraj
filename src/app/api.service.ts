@@ -6,50 +6,50 @@ export class ApiService {
     fruits = [
         {
           id:1,
-          nom: 'salades',
+          nom: 'Salades',
           image: 'https://www.flaticon.com/svg/static/icons/svg/123/123226.svg',
         },
         {
           id:2,
-          nom: 'tomates',
+          nom: 'Tomates',
           image: 'https://www.flaticon.com/svg/static/icons/svg/123/123223.svg'
         },
         {
           id:3,
-          nom: 'fraise',
+          nom: 'Fraise',
           image: 'https://www.flaticon.com/svg/static/icons/svg/123/123266.svg'
         },
         {
           id:4,
-          nom: 'banane',
+          nom: 'Banane',
           image: 'https://www.flaticon.com/svg/static/icons/svg/123/123224.svg'
         }
       ];
-    
+
       legumes = [
         {
           id:5,
-          nom: 'carotte',
+          nom: 'Carotte',
           image: 'https://www.flaticon.com/svg/static/icons/svg/123/123236.svg'
         },
         {
           id:6,
-          nom: 'aubergine',
+          nom: 'Aubergine',
           image: 'https://www.flaticon.com/svg/static/icons/svg/286/286695.svg'
         },
         {
           id:7,
-          nom: 'oignons',
+          nom: 'Oignons',
           image: 'https://www.flaticon.com/svg/static/icons/svg/123/123238.svg'
         },
         {
           id:8,
-          nom: 'navets',
+          nom: 'Navets',
           image: 'https://www.flaticon.com/svg/static/icons/svg/123/123225.svg'
         }
       ];
 
     constructor() {}
 
-    
+
 }
