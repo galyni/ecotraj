@@ -1,19 +1,20 @@
 <mat-card>Vous avez sélectionné :</mat-card>
 <mat-list>
   <mat-card *ngFor="let element of liste" class="jolieTexte; bloc; textbloc">
-    <mat-card class="container">
+    <mat-card>
       <mat-card-header>
         <div mat-card-avatar class="item-image"><img class="image" [src]="element['image']"></div>
         <mat-card-title>{{ element['nom'] }}</mat-card-title>
       </mat-card-header>
 
-
+<mat-card-content class="container">
       <div class="item-1">Vous avez besoin de {{ element['graines']}} graines par m2.</div>
       <div class="item-2">Vous devez arroser {{ element['arrosage'] }} fois par semaine.</div>
       <div class="item-3">Il faut mettre en terre au moment suivant : {{element['date'] }}. </div>
       <div class="item-4">La récolte pourra être fait après {{element['recolte']}} semaines.</div>
       <div class="item-5">Un petit conseil pour favoriser la pousse : {{ element['conditions']}}.</div>
       <div class="item-6">Quelques liens utiles : <a *ngFor="let lien of element['liens']" [href]="lien">Test</a></div>
+    </mat-card-content>
     </mat-card>
   </mat-card>
 
