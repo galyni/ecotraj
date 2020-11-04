@@ -1,6 +1,11 @@
-.image {
+#image {
   width: 30px;
   height: 30px;
+  grid-area: header1;
+}
+
+#titre{
+  grid-area: header2;
 }
 
 .bloc {
@@ -13,17 +18,13 @@
   justify-content: center;
 }
 
-.textcentre{
-  text-align: center;
-
-}
-
 .container {
   display: grid;
   grid-template-columns: 100px 100px 100px 100px;
   grid-template-rows: auto;
   grid-template-areas:
-    "header header header header"
+    ". . header1 ."
+    ". header2 header2 ."
     "main1 main2 . ."
     "main3 main4 . ."
     "main5 main6 . .";

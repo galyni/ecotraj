@@ -3,8 +3,8 @@
   <mat-card *ngFor="let element of liste" class="jolieTexte; bloc; textbloc">
     <div class="container">
 
-      <div style="text-align: center"><img class="image" [src]="element['image']"></div>
-      <h4 class="jolieTexte; textcentre">{{ element['nom'] }}</h4>
+      <div style="text-align: center"><img id="image" [src]="element['image']"></div>
+      <h4 class="jolieTexte" id="titre">{{ element['nom'] }}</h4>
 
 
       <div class="item-1">item a 1</div>
