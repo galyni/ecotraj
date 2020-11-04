@@ -1,4 +1,4 @@
-<h1 class="jolieTexte" style="margin-top: 20px;">Vous avez sélectionné :</h1>
+<h1 class="jolieTexte">Vous avez sélectionné :</h1>
 <mat-list>
   <mat-card *ngFor="let element of liste" class="jolieTexte; bloc; textbloc">
     <div class="container">
@@ -6,21 +6,20 @@
       <div class="item-image"><img class="image" [src]="element['image']"></div>
       <h4 class="item-nom">{{ element['nom'] }}</h4>
 
-
-      <div class="item-1">SAlut à tous blablablabla blablablabla blablablablablablablablablablablablablablablabla</div>
-      <div class="item-2">SAlut à tous blablablabla blablablabla blablablablablablablablablablablablablablablabla</div>
-      <div class="item-3">SAlut à tous blablablabla blablablabla blablablablablablablablablablablablablablablabla</div>
-      <div class="item-4">SAlut à tous blablablabla blablablabla blablablablablablablablablablablablablablablabla</div>
-      <div class="item-5">SAlut à tous blablablabla blablablabla blablablablablablablablablablablablablablablabla</div>
-      <div class="item-6">SAlut à tous blablablabla blablablabla blablablablablablablablablablablablablablablabla</div>
+      <div class="item-1">Vous avez besoin de {{ element['graines']}} graines par m2.</div>
+      <div class="item-2">Vous devez arroser {{ element['arrosage'] }} fois par semaine.</div>
+      <div class="item-3">Il faut mettre en terre au moment suivant : {{element['date'] }}. </div>
+      <div class="item-4">La récolte pourra être fait après {{element['recolte']}} semaines.</div>
+      <div class="item-5">Un petit conseil pour favoriser la pousse : {{ element['conditions']}}.</div>
+      <div class="item-6">Quelques liens utiles : <a *ngFor="let lien of element['liens']" [href]="lien">Test</a></div>
     </div>
   </mat-card>
 
 </mat-list>
 
 <mat-card>
-  <mat-card-header class="jolieTexte; textbloc" style="margin-bottom: 15px">
-    Vidéo pour réaliser soi-même son potager :
+  <mat-card-header class="jolieTexte; textbloc" style="margin-bottom: 15  px">
+    Vidéo pour réaliser soi-même son potager.
   </mat-card-header>
   <iframe class="frame" width="560" height="315" src="https://www.youtube.com/embed/G4BlA68xs9Y" frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

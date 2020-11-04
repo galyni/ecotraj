@@ -3,6 +3,11 @@
   height: 40px;
 }
 
+#titre{
+  grid-area: header;
+
+}
+
 .bloc {
   width: 40%;
 
@@ -11,11 +16,6 @@
 .textbloc{
   display: flex;
   justify-content: center;
-}
-
-.textcentre{
-  text-align: center;
-
 }
 
 .container {
