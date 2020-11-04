@@ -4,20 +4,16 @@
     <mat-card-subtitle>Commencer mon potager</mat-card-subtitle>
   </mat-card-header>
   <mat-card-content>
-    <!-- <div style="display: inline-block;"> -->
       <mat-list style="display: inline-block;" >
         <mat-list-item *ngFor="let fruit of fruits">
           <mat-checkbox (change)="onChange(fruit.id)" color='primary' labelPosition='after'><img class="icones" src="{{ fruit['image'] }}"> {{ fruit['nom'] }} </mat-checkbox>
         </mat-list-item>
       </mat-list>
-    <!-- </div> -->
-    <!-- <div style="display: inline-block;"> -->
       <mat-list style="display: inline-block;">
         <mat-list-item *ngFor="let legume of legumes">
           <mat-checkbox (change)="onChange(legume.id)" color='primary' labelPosition='after'><img class="icones" src="{{ legume['image'] }}"> {{ legume['nom'] }}</mat-checkbox>
         </mat-list-item>
       </mat-list>
-    <!-- </div> -->
   </mat-card-content>
   <mat-card-actions id="validateButtonContainer">
     <button mat-raised-button color="primary" (click)="getResults()" [disabled]="!checkedItems.length">Valider ma liste</button>
