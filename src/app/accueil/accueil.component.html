@@ -21,7 +21,7 @@
       </mat-list>
     <!-- </div> -->
   </mat-card-content>
-  <mat-card-actions>
-    <button mat-button (click)="getResults()" [disabled]="!checkedItems.length">Valider ma liste</button>
+  <mat-card-actions id="validateButtonContainer">
+    <button mat-raised-button color="primary" (click)="getResults()" [disabled]="!checkedItems.length">Valider ma liste</button>
   </mat-card-actions>
 </mat-card>

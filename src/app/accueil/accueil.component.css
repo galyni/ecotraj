@@ -2,3 +2,12 @@
     width: 22%;
 }
 
+#validateButtonContainer{
+    text-align: center;
+}
+
+.validateButton{
+    background-color: red;
+}
+
+
