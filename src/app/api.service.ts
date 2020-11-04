@@ -9,11 +9,7 @@ export class ApiService {
           nom: 'Salades',
           graines: 4,
           arrosage: 3,
-<<<<<<< HEAD
-          date: "bientôt",
-=======
           date: 'Bientôt',
->>>>>>> 5500188394f88b8b8d842b6973ee7df779f4604d
           recolte: 5,
           conditions: "en prendre soin",
           lien: ["google", "duckduckgo"],
@@ -24,11 +20,7 @@ export class ApiService {
           nom: 'Tomates',
           graines: 4,
           arrosage: 3,
-<<<<<<< HEAD
-          date: "bientôt",
-=======
           date: 'Bientôt',
->>>>>>> 5500188394f88b8b8d842b6973ee7df779f4604d
           recolte: 5,
           conditions: "en prendre soin",
           lien: ["google", "duckduckgo"],
@@ -39,12 +31,7 @@ export class ApiService {
           nom: 'Fraise',
           graines: 4,
           arrosage: 3,
-<<<<<<< HEAD
-          date: "bientôt",
-
-=======
           date: 'Bientôt',
->>>>>>> 5500188394f88b8b8d842b6973ee7df779f4604d
           recolte: 5,
           conditions: "en prendre soin",
           lien: ["google", "duckduckgo"],
@@ -55,12 +42,7 @@ export class ApiService {
           nom: 'Banane',
           graines: 4,
           arrosage: 3,
-<<<<<<< HEAD
-          date: "bientôt",
-
-=======
           date: 'Bientôt',
->>>>>>> 5500188394f88b8b8d842b6973ee7df779f4604d
           recolte: 5,
           conditions: "en prendre soin",
           lien: ["google", "duckduckgo"],
@@ -74,12 +56,7 @@ export class ApiService {
           nom: 'Carotte',
           graines: 4,
           arrosage: 3,
-<<<<<<< HEAD
-          date: "bientôt",
-
-=======
           date: 'Bientôt',
->>>>>>> 5500188394f88b8b8d842b6973ee7df779f4604d
           recolte: 5,
           conditions: "en prendre soin",
           lien: ["google", "duckduckgo"],
@@ -90,12 +67,7 @@ export class ApiService {
           nom: 'Aubergine',
           graines: 4,
           arrosage: 3,
-<<<<<<< HEAD
-          date: "bientôt",
-
-=======
           date: 'Bientôt',
->>>>>>> 5500188394f88b8b8d842b6973ee7df779f4604d
           recolte: 5,
           conditions: "en prendre soin",
           lien: ["google", "duckduckgo"],
@@ -106,12 +78,7 @@ export class ApiService {
           nom: 'Oignons',
           graines: 4,
           arrosage: 3,
-<<<<<<< HEAD
-          date: "bientôt",
-
-=======
           date: 'Bientôt',
->>>>>>> 5500188394f88b8b8d842b6973ee7df779f4604d
           recolte: 5,
           conditions: "en prendre soin",
           lien: ["google", "duckduckgo"],
@@ -122,12 +89,7 @@ export class ApiService {
           nom: 'Navets',
           graines: 4,
           arrosage: 3,
-<<<<<<< HEAD
-          date: "bientôt",
-
-=======
           date: 'Bientôt',
->>>>>>> 5500188394f88b8b8d842b6973ee7df779f4604d
           recolte: 5,
           conditions: "en prendre soin",
           lien: ["google", "duckduckgo"],
