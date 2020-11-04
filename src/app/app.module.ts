@@ -15,9 +15,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavComponent } from './nav/nav.component';
 import { ApiService } from './api.service';
 import { ConseilsComponent } from './conseils/conseils.component';
+import { PresentationComponent } from './presentation/presentation.component';
 
 const routes = [
-  { path: '', component: AccueilComponent },
+  { path: '', component: PresentationComponent },
+  { path: 'accueil', component: AccueilComponent },
   { path: 'conseils', component: ConseilsComponent }
 ]
 
@@ -26,7 +28,8 @@ const routes = [
     AppComponent,
     AccueilComponent,
     NavComponent,
-    ConseilsComponent
+    ConseilsComponent,
+    PresentationComponent
   ],
   imports: [
     BrowserModule,
