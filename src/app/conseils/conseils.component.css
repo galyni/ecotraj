@@ -24,9 +24,9 @@
   grid-template-rows: auto;
   grid-template-areas:
     "header header header header"
-    "main1 main2 . ."
-    "main3 main4 . ."
-    "main5 main6 . .";
+    ". main1 main2 ."
+    ". main3 main4."
+    ". main5 main6.";
 }
 
 .item-1 {
