@@ -1,22 +1,25 @@
 <div class="jolieTexte; commonDiv;" style="text-align: center; margin-top: 20px;">
-      <h3>Vous avez sélectionné :</h3>
+  <h3>Vous avez sélectionné :</h3>
 </div>
-  <mat-card *ngFor="let element of listeSelectionnes" class="jolieTexte; bloc; textbloc">
-    <mat-card>
-      <mat-card-header>
-        <div mat-card-avatar class="item-image"><img class="image" [src]="element['image']"></div>
-        <mat-card-title>{{ element['nom'] }}</mat-card-title>
-      </mat-card-header>
-<mat-card-content class="container">
+<mat-card *ngFor="let element of listeSelectionnes" class="jolieTexte; bloc; textbloc">
+  <mat-card>
+    <mat-card-header>
+      <div mat-card-avatar class="item-image"><img class="image" [src]="element['image']"></div>
+      <mat-card-title>{{ element['nom'] }}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="container">
       <div class="item-1">Vous avez besoin de {{ element['graines']}} </div>
       <div class="item-2">Vous devez arroser {{ element['arrosage'] }} </div>
       <div class="item-3">Il faut mettre en terre au moment suivant : {{element['date'] }}. </div>
       <div class="item-4">La récolte pourra être faite après {{element['recolte']}} </div>
       <div class="item-5">Un petit conseil pour favoriser la pousse : {{ element['conditions']}}.</div>
-      <div class="item-6">Quelques liens utiles : <a *ngFor="let lien of element['lien']" [href]="lien.url">{{ lien.nom}} </a></div>
+      <div class="item-6">Un lien pour vous aider : <a target="_blank"
+          href="https://www.promessedefleurs.com/conseil-plantes-jardin/ficheconseil/faire-son-premier-potager-guide-pour-les-debutants">Conseils</a>
+      </div>
+      <!-- <a *ngFor="let lien of element['lien']" [href]="lien.url">{{ lien.nom}} </a> -->
     </mat-card-content>
-    </mat-card>
   </mat-card>
+</mat-card>
 
 
 <mat-card>
