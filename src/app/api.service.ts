@@ -39,7 +39,7 @@ export class ApiService {
     },
     {
       id: 4,
-      nom: 'Banane (pas dinfo)',
+      nom: 'Banane',
       graines: 4,
       arrosage: 3,
       date: 'bientôt',
@@ -61,7 +61,7 @@ export class ApiService {
     },
     {
       id: 13,
-      nom: 'Framboise pas dinfo',
+      nom: 'Framboise',
       graines: 4,
       arrosage: 3,
       date: 'bientôt',
@@ -106,7 +106,7 @@ export class ApiService {
     },
     {
       id: 8,
-      nom: 'Navets (pas dinfo)',
+      nom: 'Navets',
       graines: 4,
       arrosage: 3,
       date: 'bientôt',
