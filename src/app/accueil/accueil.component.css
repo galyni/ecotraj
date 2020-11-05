@@ -1,6 +1,8 @@
 #potager {
-    width: 370px;
+    width: fit-content;
     min-width: 300px;
+    margin-left: auto; 
+    margin-right: auto;
 }
 
 #validateButtonContainer{
