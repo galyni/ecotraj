@@ -42,7 +42,7 @@ const routes = [
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(routes),
+    RouterModule.forRoot(routes, { scrollPositionRestoration: 'enabled' }),
     MatCardModule, MatButtonModule, MatInputModule, MatListModule, MatCheckboxModule, MatToolbarModule,
     BrowserAnimationsModule
   ],
