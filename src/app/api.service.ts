@@ -155,7 +155,7 @@ export class ApiService {
           nom: 'Courgettes',
           graines: "6 à 8 graines par m2",
           arrosage: "2 à 3 fois par semaine",
-          date: 'durant l'Eté,
+          date: 'durant l\'Eté',
           recolte: "début juillet jusqu'à octobre",
           conditions: "en prendre soin",
           lien: ["google", "duckduckgo"],
