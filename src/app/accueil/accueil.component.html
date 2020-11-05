@@ -6,15 +6,9 @@
   </mat-card-header>
   <mat-card-content>
     <mat-list style="display: inline-block;">
-      <mat-list-item *ngFor="let fruit of fruits">
-        <mat-checkbox (change)="onChange(fruit.id)" color='primary' labelPosition='after'><img class="icones"
-            src="{{ fruit['image'] }}"> {{ fruit['nom'] }} </mat-checkbox>
-      </mat-list-item>
-    </mat-list>
-    <mat-list style="display: inline-block;">
-      <mat-list-item *ngFor="let legume of legumes">
-        <mat-checkbox (change)="onChange(legume.id)" color='primary' labelPosition='after'><img class="icones"
-            src="{{ legume['image'] }}"> {{ legume['nom'] }}</mat-checkbox>
+      <mat-list-item *ngFor="let element of liste">
+        <mat-checkbox (change)="onChange(element.id)" color='primary' labelPosition='after'><img class="icones"
+            src="{{ element['image'] }}"> {{ element['nom'] }} </mat-checkbox>
       </mat-list-item>
     </mat-list>
   </mat-card-content>

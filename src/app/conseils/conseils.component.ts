@@ -8,10 +8,9 @@ import { ApiService } from '../api.service';
 })
 export class ConseilsComponent implements OnInit {
 
-  fruits;
-  legumes;
+  liste;
   elementsSelectionnes = [];
-  liste = [];
+  listeSelectionnes = [];
 
   constructor(private api: ApiService) {
 
@@ -19,22 +18,16 @@ export class ConseilsComponent implements OnInit {
 
   ngOnInit(): void {
     this.elementsSelectionnes = localStorage.getItem('elemRecuperes').split('-').map(Number);
-    this.fruits = this.api.fruits;
-    this.legumes = this.api.legumes;
-    console.log(this.elementsSelectionnes);
+    this.liste = this.api.fruitsEtLegumes;
     for(let id of this.elementsSelectionnes){
-      this.liste.push(this.getItem(id));
+      this.listeSelectionnes.push(this.getItem(id));
     }
   }
 
   getItem(id) {
-    for (let fruit of this.fruits) {
-      if (fruit.id === id)
-         return fruit;
-    }
-    for (let legume of this.legumes) {
-      if (legume.id === id)
-         return legume;
+    for (let element of this.liste) {
+      if (element.id === id)
+         return element;
     }
   }
 

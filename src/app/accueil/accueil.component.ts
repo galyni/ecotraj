@@ -10,8 +10,7 @@ import { Router } from '@angular/router';
 export class AccueilComponent implements OnInit {
 
   
-  fruits;
-  legumes;
+  liste;
 
   checkedItems = []
 
@@ -20,8 +19,7 @@ export class AccueilComponent implements OnInit {
    }
 
   ngOnInit(): void {
-    this.fruits = this.api.fruits;
-    this.legumes = this.api.legumes;
+    this.liste = this.api.fruitsEtLegumes;
   }
 
   getResults() {
