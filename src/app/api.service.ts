@@ -40,11 +40,11 @@ export class ApiService {
     {
       id: 4,
       nom: 'Banane',
-      graines: 4,
-      arrosage: 3,
-      date: 'bientôt',
-      recolte: 5,
-      conditions: "en prendre soin",
+      graines: "1 babanier à mettre dans un pot rempli de terreau",
+      arrosage: "tous les 2, 3 jours",
+      date: "n'importe quel moment de l'année",
+      recolte: "Lorsque les bananes sont mûres",
+      conditions: "température entre 18 et 22°C, beaucoup de lumière",
       lien: ["google", "duckduckgo"],
       image: 'https://www.flaticon.com/svg/static/icons/svg/123/123224.svg'
     },
@@ -62,15 +62,14 @@ export class ApiService {
     {
       id: 13,
       nom: 'Framboise',
-      graines: 4,
-      arrosage: 3,
-      date: 'bientôt',
-      recolte: 5,
-      conditions: "en prendre soin",
+      graines: "1 pied par framboisier, à espacer de 1.2 m",
+      arrosage: "tous les 2 jours",
+      date: 'Octobre à Mars',
+      recolte: "de Juin à Septembre",
+      conditions: "planter en plein soleil",
       lien: ["google", "duckduckgo"],
       image: 'https://www.flaticon.com/svg/static/icons/svg/815/815590.svg'
     },
-
     {
       id: 5,
       nom: 'Carotte',
@@ -116,11 +115,11 @@ export class ApiService {
     {
       id: 8,
       nom: 'Navets',
-      graines: 4,
-      arrosage: 3,
-      date: 'bientôt',
-      recolte: 5,
-      conditions: "en prendre soin",
+      graines: "4 à 6 en les espaçant de plusieurs cm",
+      arrosage: "1 à 2 par semaine",
+      date: 'mi-février à avril',
+      recolte: "mai à juillet et septembre à novembre",
+      conditions: "conserver l'humidité dans l'environnement de pousse",
       lien: ["google", "duckduckgo"],
       image: 'https://www.flaticon.com/svg/static/icons/svg/123/123225.svg'
     },
