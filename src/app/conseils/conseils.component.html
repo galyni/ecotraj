@@ -13,7 +13,7 @@
       <div class="item-3">Il faut mettre en terre au moment suivant : {{element['date'] }}. </div>
       <div class="item-4">La récolte pourra être faite après {{element['recolte']}} </div>
       <div class="item-5">Un petit conseil pour favoriser la pousse : {{ element['conditions']}}.</div>
-      <div class="item-6">Quelques liens utiles : <a *ngFor="let lien of element['liens']" [href]="lien">Test</a></div>
+      <div class="item-6">Quelques liens utiles : <a *ngFor="let lien of element['lien']" [href]="lien.url">{{ lien.nom}} </a></div>
     </mat-card-content>
     </mat-card>
   </mat-card>

@@ -79,7 +79,16 @@ export class ApiService {
       date: 'Mars à début juillet',
       recolte: "le début d'Avril jusqu'à début Décembre",
       conditions: "température entre 8 et 29°C",
-      lien: ["google", "duckduckgo"],
+      lien: [
+        {
+          nom: "Google",
+          url: "https://www.google.com/"
+        },
+        {
+          nom: "Google2",
+          url: "https://www.google.fr/"
+        }
+      ],
       image: 'https://www.flaticon.com/svg/static/icons/svg/123/123236.svg'
     },
     {
