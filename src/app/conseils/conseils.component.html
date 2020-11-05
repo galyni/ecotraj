@@ -1,7 +1,7 @@
 <div class="jolieTexte; commonDiv;" style="text-align: center; margin-top: 20px;">
   <h3>Vous avez sélectionné :</h3>
 </div>
-<mat-card *ngFor="let element of listeSelectionnes" class="jolieTexte; bloc; textbloc">
+<div *ngFor="let element of listeSelectionnes" class="jolieTexte; bloc; textbloc" style="margin-top: 10px;">
   <mat-card>
     <mat-card-header>
       <div mat-card-avatar class="item-image"><img class="image" [src]="element['image']"></div>
@@ -19,11 +19,11 @@
       <!-- <a *ngFor="let lien of element['lien']" [href]="lien.url">{{ lien.nom}} </a> -->
     </mat-card-content>
   </mat-card>
-</mat-card>
+</div>
 
 
-<mat-card>
-  <mat-card-header class="jolieTexte; textbloc" style="margin-bottom: 15px">
+<div>
+  <mat-card-header class="jolieTexte; textbloc" style="margin-bottom: 15px; margin-top: 50px;">
     <mat-card-subtitle>
       Vidéo pour réaliser soi-même son potager.
     </mat-card-subtitle>
@@ -31,4 +31,4 @@
   <iframe class="frame" width="560" height="315" src="https://www.youtube.com/embed/G4BlA68xs9Y" frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen></iframe>
-</mat-card>
+</div>
