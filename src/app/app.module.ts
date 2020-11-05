@@ -16,11 +16,16 @@ import { NavComponent } from './nav/nav.component';
 import { ApiService } from './api.service';
 import { ConseilsComponent } from './conseils/conseils.component';
 import { PresentationComponent } from './presentation/presentation.component';
+import { TutoComponent } from './tuto.component';
+import { ContactComponent } from './contact.component';
+import { FooterComponent } from './footer.component';
 
 const routes = [
   { path: '', component: PresentationComponent },
   { path: 'accueil', component: AccueilComponent },
-  { path: 'conseils', component: ConseilsComponent }
+  { path: 'tuto', component: TutoComponent },
+  { path: 'conseils', component: ConseilsComponent },
+  { path: 'contact', component: ContactComponent }
 ]
 
 @NgModule({
@@ -29,7 +34,10 @@ const routes = [
     AccueilComponent,
     NavComponent,
     ConseilsComponent,
-    PresentationComponent
+    PresentationComponent,
+    TutoComponent,
+    ContactComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

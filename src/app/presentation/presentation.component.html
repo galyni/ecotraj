@@ -1,16 +1,39 @@
-<div style='display:flex; position:absolute; top:100px; bottom:100px; right:0; left:0;'>
-    <mat-card style="margin: auto;" >
-    <mat-card-header>
-        <mat-card-title>
-            Commencer votre potager dès maintenant.
-        </mat-card-title>
-        <mat-card-subtitle>
-            Pour commencer, appuyer sur le bouton ci-dessous.
-        </mat-card-subtitle>
-    </mat-card-header>
-    <mat-card-actions style="text-align: center;">
-        <button mat-raised-button color="primary" [routerLink]="['/accueil']">Démarrer !</button>
+<div class="commonDiv" style="text-align: center;">
+    <div >
+        <img src="https://cdn.discordapp.com/attachments/772753451263197184/773164757166981120/mon_petit_jardin_1.png">
+    </div>
 
-    </mat-card-actions>
+    <mat-card style="position: relative; margin-top: 50px; margin-bottom: 50px;">
+        <mat-card-header>
+            <mat-card-title>
+
+            </mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <p>
+                Et si je pouvais me permettre de ne manger que mes légumes ?
+                Nous nous sommes tous déjà posé cette question, sauf qu’entretenir des petits légumes et des petits
+                fruits, c’est pas gagné d’avance. Grâce à MPJ, que vous soyez le jardinier qui remporte chaque année le
+                prix de la plus grosse aubergine ou alors que vous sachiez même pas différencier un légume d’un fruit,
+                on est là pour vous.
+
+                Disponible aussi sur IOS et Android, le site et l’application permettent de sélectionner les légumes et
+                les fruits qui vous donnent envie parmi une sélection cultivable en France.
+                « Oui mais j’habite Rennes et la météo n’est pas la même qu’à Nice. »
+                Bien évidemment, la localisation est très importante. Après votre sélection de fruits et légumes, Vous
+                n’avez qu’à renseigner votre ville puis les informations
+                vont se mettre à jour.
+                Nous vous donnons toutes les informations nécessaires pour démarrer son petit potager.
+                ( C’est très français de rajouter petit avant chaque mot pour le rendre mignon :slight_smile: )
+
+                Nous vous conseillons sur :
+                - le nombre de graines par M²
+                - la fréquence d’arrosage
+                - la date de mise en terre
+                - le temps nécessaire avant de pouvoir récolter
+                - les conditions pour favoriser la pousse (température, éclairage).
+            </p>
+        </mat-card-content>
     </mat-card>
+    <app-accueil></app-accueil>
 </div>

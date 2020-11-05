@@ -15,3 +15,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .jolieTexte {
   font-family: 'Alegreya Sans', sans-serif;
 }
+
+.commonDiv{
+  margin: auto;
+  width: 40%;
+}
