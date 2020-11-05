@@ -68,7 +68,7 @@ export class ApiService {
       recolte: 5,
       conditions: "en prendre soin",
       lien: ["google", "duckduckgo"],
-      image: 'https://www.flaticon.com/premium-icon/icons/svg/1140/1140357.svg'
+      image: 'https://www.flaticon.com/svg/static/icons/svg/815/815590.svg'
     },
 
     {
@@ -146,7 +146,7 @@ export class ApiService {
       recolte: "le début de l'hiver",
       conditions: "repiquer après 3 mois",
       lien: ["google", "duckduckgo"],
-      image: 'https://www.flaticon.com/premium-icon/icons/svg/2149/2149841.svg'
+      image: 'https://www.flaticon.com/svg/static/icons/svg/1135/1135528.svg'
     },
     {
       id: 15,
@@ -157,7 +157,7 @@ export class ApiService {
       recolte: "début juillet jusqu'à octobre",
       conditions: "en prendre soin",
       lien: ["google", "duckduckgo"],
-      image: 'https://www.flaticon.com/premium-icon/icons/svg/3610/3610652.svg'
+      image: 'https://www.flaticon.com/svg/static/icons/svg/1515/1515034.svg'
     }
 
   ];
