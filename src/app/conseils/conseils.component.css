@@ -23,6 +23,7 @@ mat-card-content > div {
 }
 
 .container {
+  width: 700px;
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto;

@@ -97,7 +97,7 @@ export class ApiService {
       id: 7,
       nom: 'Oignons',
       graines: "2.5 à 5g par m2",
-      arrosage: "S'arrose rarement, 1 fois par semaine en cas de sécheresse",
+      arrosage: "rarement, 1 fois par semaine en cas de sécheresse",
       date: 'Août',
       recolte: "le début de l'hiver",
       conditions: "Apprécie le temps sec",
