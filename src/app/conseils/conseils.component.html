@@ -11,7 +11,7 @@
       <div class="item-1">Vous avez besoin de {{ element['graines']}} graines par m2.</div>
       <div class="item-2">Vous devez arroser {{ element['arrosage'] }} fois par semaine.</div>
       <div class="item-3">Il faut mettre en terre au moment suivant : {{element['date'] }}. </div>
-      <div class="item-4">La récolte pourra être fait après {{element['recolte']}} semaines.</div>
+      <div class="item-4">La récolte pourra être faite après {{element['recolte']}} semaines.</div>
       <div class="item-5">Un petit conseil pour favoriser la pousse : {{ element['conditions']}}.</div>
       <div class="item-6">Quelques liens utiles : <a *ngFor="let lien of element['liens']" [href]="lien">Test</a></div>
     </mat-card-content>
