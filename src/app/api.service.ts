@@ -57,7 +57,7 @@ export class ApiService {
       recolte: "le début de l'Automne",
       conditions: "plus de 17°C",
       lien: ["google", "duckduckgo"],
-      image: 'https://www.flaticon.com/svg/static/icons/svg/123/123224.svg'
+      image: 'https://www.flaticon.com/svg/static/icons/svg/123/123234.svg'
     },
     {
       id: 13,
@@ -68,7 +68,7 @@ export class ApiService {
       recolte: 5,
       conditions: "en prendre soin",
       lien: ["google", "duckduckgo"],
-      image: 'https://www.flaticon.com/svg/static/icons/svg/123/123224.svg'
+      image: 'https://www.flaticon.com/premium-icon/icons/svg/1140/1140357.svg'
     },
 
     {
@@ -124,7 +124,7 @@ export class ApiService {
       recolte: "55 à 85 jours",
       conditions: "tolère le froid, température entre 15 et 24°C",
       lien: ["google", "duckduckgo"],
-      image: 'https://www.flaticon.com/svg/static/icons/svg/123/123225.svg'
+      image: 'https://www.flaticon.com/svg/static/icons/svg/123/123229.svg'
     },
     {
       id: 10,
@@ -135,7 +135,7 @@ export class ApiService {
       recolte: "4 à 6 semaines",
       conditions: "Au soleil ou à l'ombre légère",
       lien: ["google", "duckduckgo"],
-      image: 'https://www.flaticon.com/svg/static/icons/svg/123/123225.svg'
+      image: 'https://www.flaticon.com/svg/static/icons/svg/680/680948.svg'
     },
     {
       id: 14,
@@ -146,7 +146,7 @@ export class ApiService {
       recolte: "le début de l'hiver",
       conditions: "repiquer après 3 mois",
       lien: ["google", "duckduckgo"],
-      image: 'https://www.flaticon.com/svg/static/icons/svg/123/123224.svg'
+      image: 'https://www.flaticon.com/premium-icon/icons/svg/2149/2149841.svg'
     },
     {
       id: 15,
@@ -157,11 +157,11 @@ export class ApiService {
       recolte: "début juillet jusqu'à octobre",
       conditions: "en prendre soin",
       lien: ["google", "duckduckgo"],
-      image: 'https://www.flaticon.com/svg/static/icons/svg/123/123224.svg'
+      image: 'https://www.flaticon.com/premium-icon/icons/svg/3610/3610652.svg'
     }
 
   ];
 
   constructor() { }
-  
+
 }
