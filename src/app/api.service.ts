@@ -157,7 +157,7 @@ export class ApiService {
       recolte: "début juillet jusqu'à octobre",
       conditions: "en prendre soin",
       lien: ["google", "duckduckgo"],
-      image: 'https://www.flaticon.com/svg/static/icons/svg/1515/1515034.svg'
+      image: 'https://www.flaticon.com/svg/static/icons/svg/1466/1466059.svg'
     }
 
   ];
